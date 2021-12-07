@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: nacos-web
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.5.165.86:28999
+server:
+  port: 9100
+#健康检查
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
